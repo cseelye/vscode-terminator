@@ -36,16 +36,27 @@
 		],
 		"configuration":[
 			{
-				"title": "terminator",
+				"title": "Terminator",
 				"properties": {
 					"terminator.env": {
 						"type":"object",
 						"description": "Environment variables to apply to all terminals",
-						"default": {}
+						"default": {},
+						"properties": {
+							"name": {
+								"type": "string",
+								"description": "ENV variable name"
+							},
+							"value": {
+								"type": "string",
+								"description": "Value of the ENV variable"
+							}
+						}
 					},
 					"terminator.terminals": {
 						"type":"array",
 						"description": "Terminal profiles",
+						"default": [],
 						"items": {
 							"type":"object",
 							"properties": {
@@ -61,11 +72,30 @@
 									"type":"string",
 									"description": "Color to use for the icon and name"
 								},
+								"message": {
+									"type":"string",
+									"description": "Message to display on first launch"
+								},
+								"env": {
+									"type": "object",
+									"description": "Environment variables to apply to this terminal",
+									"default": {},
+									"properties": {
+										"name": {
+											"type": "string",
+											"description": "ENV variable name"
+										},
+										"value": {
+											"type": "string",
+											"description": "Value of the ENV variable"
+										}
+									}
+								},
 								"workDir": {
 									"type":"string",
 									"description": "Working directory to start the terminal in"
 								},
-								"shell": {
+								"shellPath": {
 									"type":"string",
 									"description": "Path to an executable to use instead of the default shell"
 								},
