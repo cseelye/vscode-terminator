@@ -2,7 +2,7 @@
   "name": "vscode-terminator",
 	"displayName": "Terminator",
 	"description": "Launch customized terminals",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"license": "MIT",
 	"publisher": "cseelye",
 	"author": {
