@@ -2,7 +2,7 @@
   "name": "vscode-terminator",
 	"displayName": "Terminator",
 	"description": "Launch customized terminals",
-	"version": "0.0.6",
+	"version": "1.0.0",
 	"license": "MIT",
 	"publisher": "cseelye",
 	"author": {
@@ -10,10 +10,6 @@
 		"email": "cseelye@gmail.com"
 	},
 	"icon": "resources/terminal.png",
-	"galleryBanner": {
-		"color": "#0e1626",
-		"theme": "dark"
-	},
 	"bugs": {
 		"url": "https://github.com/cseelye/vscode-terminator/issues"
 	},
