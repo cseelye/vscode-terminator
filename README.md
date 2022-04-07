@@ -9,18 +9,22 @@ Top level settings:
 `terminator.terminals` is a list of terminal objects where you specify your terminal configurations.
 
 Per-terminal settings:
-| Setting   | Description |
-| --------- | ----------- |
-| name      | Name for the terminal, used to select for launching and to set the display name |
-| color     | Color to make the terminal icon; see https://code.visualstudio.com/api/references/theme-color#integrated-terminal-colors |
-| icon      | Icon to set for the terminal; see https://code.visualstudio.com/api/references/icons-in-labels#icon-listing |
-| message   | Initial message to show when the terminal is created |
-| shellPath | Path to the shell executable |
-| shellArgs | Args to pass to the shell executable, in exec format |
-| workDir   | Directory to start the shell in |
-| env       | Shell-specific environment variables to set |
 
-Environment variables are combines from the global list and per-terminal list, with the per-terminal list having precedence. Environment variables that are used in shellPath or shellArgs will be replaced with the values.
+| Setting   | Description                                                                         |
+| --------- | ----------------------------------------------------------------------------------- |
+| name      | Name for the terminal, used to select for launching and                             |
+|           | to set the display name                                                             |
+| color     | Color to make the terminal icon; see                                                |
+|           | https://code.visualstudio.com/api/references/theme-color#integrated-terminal-colors |
+| icon      | Icon to set for the terminal; see                                                   |
+|           | https://code.visualstudio.com/api/references/icons-in-labels#icon-listing           |
+| message   | Initial message to show when the terminal is created                                |
+| shellPath | Path to the shell executable                                                        |
+| shellArgs | Args to pass to the shell executable, in exec format                                |
+| workDir   | Directory to start the shell in                                                     |
+| env       | Shell-specific environment variables to set                                         |
+
+Environment variables are combined from the global list and per-terminal list, with the per-terminal list having precedence. Environment variables that are used in shellPath or shellArgs will be replaced with the values.
 
 ## Example Configuration
 
